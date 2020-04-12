@@ -27,6 +27,9 @@ page_soup=soup(page_html,"html.parser")
 
 
 list_of_games=[]
+containers=page_soup.findAll("a",{"class":"search_result_row ds_collapse_flag"})
+
+
 for container in containers:
     
     #title of game
